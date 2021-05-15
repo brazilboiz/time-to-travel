@@ -145,7 +145,7 @@ button {
 
   top: 150px;
   left: 0;
-  transform: translateY(-120%);
+  transform: translateY(-150%);
   transition: 0.3s transform;
   max-height: calc(100% - 70px);
 }
