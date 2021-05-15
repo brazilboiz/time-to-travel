@@ -32,11 +32,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 313px;
 }
 
 .logo__image {
-  width: 100%;
+  width: 313px;
 }
 
 .logo__label {
@@ -93,7 +92,7 @@ button {
     font-size: 12px;
   }
 
-  .logo {
+  .logo__image {
     width: 150px;
   }
 }
