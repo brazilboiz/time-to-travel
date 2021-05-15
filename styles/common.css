@@ -20,6 +20,10 @@ body {
   box-sizing: border-box;
 }
 
+.hamburger {
+  padding: 0 !important;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;

@@ -100,6 +100,11 @@
   .header {
     background-image: url("../assets/tour/Egypt_mob.png");
   }
+
+  .about-tour__card,
+  .buy-tour-card {
+    max-width: 100%;
+  }
 }
 
 .buy-tour-card__title {
