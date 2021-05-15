@@ -96,6 +96,12 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .header {
+    background-image: url("../assets/tour/Egypt_mob.png");
+  }
+}
+
 .buy-tour-card__title {
   font-size: 2.25rem;
   font-weight: 300;
