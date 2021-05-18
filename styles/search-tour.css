@@ -1,0 +1,45 @@
+.search-header {
+  background-image: url("../assets/tour/search-tour.png");
+}
+
+.search-header .tour-card__name {
+  padding: 30px 0 10px;
+}
+
+.country-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px 0 50px;
+}
+
+.country-filter__item {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.country-filter__image {
+  width: 210px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.country-filter__image.choosen {
+  border: 3px solid #efc42b;
+}
+
+@media screen and (max-width: 1024px) {
+  .country-filter__image {
+    width: 150px;
+    height: 100px;
+  }
+
+  .country-filter {
+    gap: 20px;
+    justify-content: center;
+  }
+}

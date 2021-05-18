@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time To Travel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/tour.css" />
+    <link rel="stylesheet" href="./styles/search-tour.css" />
+    <link rel="stylesheet" href="./styles/hamburgers.min.css" />
+  </head>
+  <body>
+    <header class="header search-header">
+      <nav class="navigation container">
+        <button
+          class="hamburger hamburger--collapse sidebar-handler mobile-visible"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/logo.png" alt="logo" class="logo__image" />
+          </a>
+        </div>
+
+        <a href="/index.html" class="navigation-list__link mobile-hidden"
+          >Главная</a
+        >
+
+        <a href="#" class="navigation-list__link mobile-hidden active"
+          >Поиск тура</a
+        >
+
+        <a href="#" class="navigation-list__link mobile-hidden">О нас</a>
+
+        <button class="order-button mobile-hidden">Оставить заявку</button>
+        <button class="order-button mobile mobile-visible">
+          <img src="./assets/phone-call.png" alt="order" />
+        </button>
+      </nav>
+
+      <div class="header__content container">
+        <div class="tour-card">
+          <h1 class="tour-card__title">Поиск тура</h1>
+          <p class="tour-card__name">
+            Для начала мы предлагаем определиться со страной
+          </p>
+
+          <button class="tour-card__button">Страны</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- TODO: rewrite this block bcs it's not a sidebar -->
+    <aside class="sidebar mobile-visible">
+      <ul class="sidebar__list">
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link">Главная</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link">Поиск тура</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link">О нас</a>
+        </li>
+      </ul>
+    </aside>
+
+    <section class="tour-filters container">
+      <div class="country-filter">
+        <button class="country-filter__item">
+          <img
+            src="./assets/flags/canada.png"
+            alt="canada"
+            class="country-filter__image"
+          />
+        </button>
+        <button class="country-filter__item">
+          <img
+            src="./assets/flags/spain.png"
+            alt="spain"
+            class="country-filter__image"
+          />
+        </button>
+        <button class="country-filter__item">
+          <img
+            src="./assets/flags/egypt.png"
+            alt="egypt"
+            class="country-filter__image"
+          />
+        </button>
+        <button class="country-filter__item">
+          <img
+            src="./assets/flags/philippines.png"
+            alt="philippines"
+            class="country-filter__image"
+          />
+        </button>
+        <button class="country-filter__item">
+          <img
+            src="./assets/flags/turkey.png"
+            alt="turkey"
+            class="country-filter__image"
+          />
+        </button>
+        <button class="country-filter__item">
+          <img
+            src="./assets/flags/united-arab-emirates.png"
+            alt="united-arab-emirates"
+            class="country-filter__image"
+          />
+        </button>
+        <button class="country-filter__item">
+          <img
+            src="./assets/flags/cyprus.png"
+            alt="cyprus"
+            class="country-filter__image"
+          />
+        </button>
+        <button class="country-filter__item">
+          <img
+            src="./assets/flags/greece.png"
+            alt="greece"
+            class="country-filter__image"
+          />
+        </button>
+      </div>
+    </section>
+
+    <section class="search-results">
+      <div class="search-results__item">Египет</div>
+      <div class="search-results__item">Египет</div>
+    </section>
+
+    <!--  -->
+
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__addresses">
+          Наши адреса: <br />
+          ул. Киевская 365/4,<br />ул. Московская 228
+        </div>
+
+        <div>© Time to travel 2021-2021</div>
+
+        <div class="footer__contacts">
+          Наши контакты:<br />
+          +8800-555-3535 - Лёшик<br />
+          +3535-555-8800 - Митя<br />
+          +4444-444-4444 - Степан
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/tour-filters.js"></script>
+  </body>
+</html>
