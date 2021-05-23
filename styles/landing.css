@@ -257,7 +257,6 @@
   }
 
   .review {
-    min-width: calc(25% - 15px);
     box-sizing: border-box;
   }
 }
