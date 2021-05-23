@@ -66,7 +66,8 @@ body {
   border-radius: 50%;
 }
 
-button {
+button,
+input[type="submit"] {
   cursor: pointer;
 }
 
@@ -96,13 +97,30 @@ button {
   display: none !important;
 }
 
+.tablet-visible {
+  display: none !important;
+}
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 12px;
   }
 
+  .order-button {
+    padding: 10px 4px;
+    margin-left: 10px;
+  }
+
   .logo__image {
     width: 150px;
+  }
+
+  .tablet-hidden {
+    display: none !important;
+  }
+
+  .tablet-visible {
+    display: flex !important;
   }
 }
 

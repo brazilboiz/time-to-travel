@@ -35,7 +35,7 @@
           <h2 class="header__description">Вы точно не будете жалеть про это</h2>
         </div>
 
-        <button class="header__button">Посмотреть туры</button>
+        <a class="header__button" href="./tour.html">Посмотреть туры</a>
       </div>
     </header>
 
@@ -112,101 +112,195 @@
     </div>
 
     <div class="tours">
-      <div class="tour">
-        <h3 class="tour__title">Турция</h3>
+      <div
+        class="tour"
+        style="background-image: url('./assets/landing/bali.png')"
+      >
+        <a href="#" class="tour__content tablet-hidden">
+          <h3 class="tour__title">Бали</h3>
+        </a>
+
+        <div href="#" class="tour__content tablet-visible">
+          <h3 class="tour__title">Бали</h3>
+          <a href="/" class="tour__details">Подробнее</a>
+        </div>
       </div>
-      <div class="tour">
-        <h3 class="tour__title">Греция</h3>
+      <div
+        class="tour"
+        style="background-image: url('./assets/landing/greece.png')"
+      >
+        <a href="#" class="tour__content tablet-hidden">
+          <h3 class="tour__title">Греция</h3>
+        </a>
+
+        <div href="#" class="tour__content tablet-visible">
+          <h3 class="tour__title">Греция</h3>
+          <a href="/" class="tour__details">Подробнее</a>
+        </div>
       </div>
-      <div class="tour">
-        <h3 class="tour__title">Египет</h3>
+      <div
+        class="tour"
+        style="background-image: url('./assets/landing/egypt.png')"
+      >
+        <a href="#" class="tour__content tablet-hidden">
+          <h3 class="tour__title">Египет</h3>
+        </a>
+
+        <div href="#" class="tour__content tablet-visible">
+          <h3 class="tour__title">Египет</h3>
+          <a href="/" class="tour__details">Подробнее</a>
+        </div>
       </div>
     </div>
 
-    <div class="ordering">
-      <form action="/" class="order-form">
-        <div>
-          <input type="text" name="name" required />
-          <input
-            type="tel"
-            name="phone"
-            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-            required
-          />
-          <input type="submit" value="Оставить заявку" />
-        </div>
-        <h3 class="ordering__title">Оформить заявку на консультацию</h3>
-      </form>
-    </div>
+    <form action="/" class="ordering container">
+      <div class="ordering__controls">
+        <h3 class="ordering__title mobile-visible">
+          Оформить заявку на консультацию
+        </h3>
+        <input
+          type="text"
+          name="name"
+          placeholder="Ваше имя"
+          required
+          class="ordering__input"
+        />
+        <input
+          type="tel"
+          name="phone"
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          required
+          value="+380"
+          placeholder="+380"
+          class="ordering__input"
+        />
+        <input type="submit" value="Оставить заявку" class="ordering__submit" />
+      </div>
+      <h3 class="ordering__title mobile-hidden">
+        Оформить заявку на консультацию
+      </h3>
+    </form>
 
     <div class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
+      <div class="container">
+        <h2 class="reviews__title">Отзывы</h2>
 
-      <div class="reviews__content">
-        <div class="review">
-          <img src="" alt="avatar" />
-          <span class="review__name">Алексей</span>
-          <span class="review__text"
-            >Удобный и надежный сайт. Всем рекомендую!</span
-          >
-        </div>
+        <div class="reviews__content">
+          <div class="review">
+            <img
+              src="./assets/landing/review-avatar1.png"
+              alt="avatar"
+              class="review__avatar"
+            />
+            <span class="review__name">Алексей</span>
+            <span class="review__text"
+              >Удобный и надежный сайт. Всем рекомендую!</span
+            >
+          </div>
 
-        <div class="review">
-          <img src="" alt="avatar" />
-          <span class="review__name">Алексей</span>
-          <span class="review__text"
-            >Удобный и надежный сайт. Всем рекомендую!</span
-          >
-        </div>
+          <div class="review">
+            <img
+              src="./assets/landing/review-avatar1.png"
+              alt="avatar"
+              class="review__avatar"
+            />
+            <span class="review__name">Алексей</span>
+            <span class="review__text"
+              >Удобный и надежный сайт. Всем рекомендую!</span
+            >
+          </div>
 
-        <div class="review">
-          <img src="" alt="avatar" />
-          <span class="review__name">Алексей</span>
-          <span class="review__text"
-            >Удобный и надежный сайт. Всем рекомендую!</span
-          >
-        </div>
+          <div class="review">
+            <img
+              src="./assets/landing/review-avatar1.png"
+              alt="avatar"
+              class="review__avatar"
+            />
+            <span class="review__name">Алексей</span>
+            <span class="review__text"
+              >Удобный и надежный сайт. Всем рекомендую!</span
+            >
+          </div>
 
-        <div class="review">
-          <img src="" alt="avatar" />
-          <span class="review__name">Алексей</span>
-          <span class="review__text"
-            >Удобный и надежный сайт. Всем рекомендую!</span
-          >
-        </div>
+          <div class="review">
+            <img
+              src="./assets/landing/review-avatar1.png"
+              alt="avatar"
+              class="review__avatar"
+            />
+            <span class="review__name">Алексей</span>
+            <span class="review__text"
+              >Удобный и надежный сайт. Всем рекомендую!</span
+            >
+          </div>
 
-        <div class="review">
-          <img src="" alt="avatar" />
-          <span class="review__name">Алексей</span>
-          <span class="review__text"
-            >Удобный и надежный сайт. Всем рекомендую!</span
-          >
-        </div>
+          <div class="review">
+            <img
+              src="./assets/landing/review-avatar1.png"
+              alt="avatar"
+              class="review__avatar"
+            />
+            <span class="review__name">Алексей</span>
+            <span class="review__text"
+              >Удобный и надежный сайт. Всем рекомендую!</span
+            >
+          </div>
 
-        <div class="review">
-          <img src="" alt="avatar" />
-          <span class="review__name">Алексей</span>
-          <span class="review__text"
-            >Удобный и надежный сайт. Всем рекомендую!</span
-          >
-        </div>
+          <div class="review">
+            <img
+              src="./assets/landing/review-avatar1.png"
+              alt="avatar"
+              class="review__avatar"
+            />
+            <span class="review__name">Алексей</span>
+            <span class="review__text"
+              >Удобный и надежный сайт. Всем рекомендую!</span
+            >
+          </div>
 
-        <div class="review">
-          <img src="" alt="avatar" />
-          <span class="review__name">Алексей</span>
-          <span class="review__text"
-            >Удобный и надежный сайт. Всем рекомендую!</span
-          >
-        </div>
+          <div class="review">
+            <img
+              src="./assets/landing/review-avatar1.png"
+              alt="avatar"
+              class="review__avatar"
+            />
+            <span class="review__name">Алексей</span>
+            <span class="review__text"
+              >Удобный и надежный сайт. Всем рекомендую!</span
+            >
+          </div>
 
-        <div class="review">
-          <img src="" alt="avatar" />
-          <span class="review__name">Алексей</span>
-          <span class="review__text"
-            >Удобный и надежный сайт. Всем рекомендую!</span
-          >
+          <div class="review">
+            <img
+              src="./assets/landing/review-avatar1.png"
+              alt="avatar"
+              class="review__avatar"
+            />
+            <span class="review__name">Алексей</span>
+            <span class="review__text"
+              >Удобный и надежный сайт. Всем рекомендую!</span
+            >
+          </div>
         </div>
       </div>
     </div>
+
+    <footer class="footer landing__footer">
+      <div class="container footer__wrapper">
+        <div class="footer__addresses">
+          Наши адреса: <br />
+          ул. Киевская 365/4,<br />ул. Московская 228
+        </div>
+
+        <div>© Time to travel 2021-2021</div>
+
+        <div class="footer__contacts">
+          Наши контакты:<br />
+          +8800-555-3535 - Лёшик<br />
+          +3535-555-8800 - Митя<br />
+          +4444-444-4444 - Степан
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
