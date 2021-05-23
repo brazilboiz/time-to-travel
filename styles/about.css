@@ -1,0 +1,75 @@
+.about-header {
+  background-image: url("../assets/about/header_bg.png");
+}
+
+.about-content {
+  padding: 100px 15px;
+}
+
+.briefly-desc__content {
+  display: flex;
+  align-items: center;
+}
+
+.briefly-desc__image,
+.about-mission__image {
+  margin-right: 20px;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.briefly-desc__title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.briefly-desc__text {
+  font-size: 1.5rem;
+}
+
+.about-points {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-mission {
+  max-width: 500px;
+}
+
+.about-mission__title {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.about-mission__row {
+  display: flex;
+  align-items: center;
+}
+
+.about-mission__text {
+  font-size: 1.5rem;
+}
+
+.about-values__title {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.about-values__list {
+  padding: 0;
+  margin: 0;
+  padding-left: 25px;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  .briefly-desc__image,
+  .about-mission__image {
+    width: 50px;
+    height: 50px;
+  }
+}
