@@ -13,10 +13,21 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/landing.css" />
+
+    <link rel="stylesheet" href="./styles/hamburgers.min.css" />
   </head>
   <body>
     <header class="header">
       <nav class="navigation container">
+        <button
+          class="hamburger hamburger--collapse sidebar-handler mobile-visible"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
         <div class="logo">
           <a href="/">
             <img src="./assets/logo.png" alt="logo" class="logo__image" />
@@ -26,8 +37,16 @@
           >
         </div>
 
-        <button class="order-button">Оставить заявку</button>
+        <button class="order-button mobile-hidden">Оставить заявку</button>
       </nav>
+
+      <aside class="sidebar mobile-visible">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <button class="order-button">Оставить заявку</button>
+          </li>
+        </ul>
+      </aside>
 
       <div class="header__content container">
         <div class="header__text-wrapper">
@@ -302,5 +321,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/sidebar.js"></script>
   </body>
 </html>
