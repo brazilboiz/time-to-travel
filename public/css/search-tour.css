@@ -1,0 +1,115 @@
+.search-header {
+  background-image: url("../assets/tour/search-tour.png");
+}
+
+.search-header .tour-card__name {
+  padding: 30px 0 10px;
+}
+
+.country-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px 0 50px;
+}
+
+.country-filter__item {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.country-filter__image {
+  width: 210px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.country-filter__image.choosen {
+  border: 3px solid #efc42b;
+}
+
+.search-result {
+  background-size: cover;
+  padding: 20px 50px 20px 100px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+.search-result__name {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.search-result__city {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.search-result__description {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.search-result__button {
+  background-color: #efc42b;
+  color: #000;
+  padding: 20px 40px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  font-size: 1.5rem;
+}
+
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .country-filter__image {
+    width: 150px;
+    height: 100px;
+  }
+
+  .country-filter {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .search-result {
+    padding: 20px;
+  }
+
+  .search-result__button {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .search-result {
+    flex-direction: column;
+  }
+
+  .search-result__description {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,274 @@
+:root {
+  --container_width: 1260px;
+  --tablet_width: 1024px;
+  --mobile_width: 400px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: var(--container_width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.hamburger {
+  padding: 0 !important;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__image {
+  width: 313px;
+}
+
+.logo__label {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.order-button {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 25px;
+  max-width: 250px;
+  width: 100%;
+  font-size: 1.5rem;
+  color: #000;
+  padding: 20px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.order-button.mobile {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.navigation-list__link {
+  color: #000;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navigation-list__link.active {
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+.mobile-visible {
+  display: none !important;
+}
+
+.tablet-visible {
+  display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+
+  .order-button {
+    padding: 10px 4px;
+    margin-left: 10px;
+  }
+
+  .logo__image {
+    width: 150px;
+  }
+
+  .tablet-hidden {
+    display: none !important;
+  }
+
+  .tablet-visible {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 9.33px;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .mobile-visible {
+    display: block !important;
+  }
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__wrapper > div {
+  padding: 10px 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.sidebar {
+  max-width: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px 15px 0 15px;
+  box-sizing: border-box;
+  box-shadow: 5px 4px 4px rgb(0, 0, 0, 0.3);
+  position: absolute;
+  height: 100%;
+
+  top: 150px;
+  left: 0;
+  transform: translateY(-150%);
+  transition: 0.3s transform;
+  max-height: calc(100% - 70px);
+}
+
+.sidebar__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar__item {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.sidebar__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar.open {
+  transform: translateY(0);
+}
+
+.minus{
+  background: lightblue;padding: 5px 15px;border-radius: 5px;cursor: pointer;
+}
+
+.plus{
+  background: greenyellow;padding: 5px 15px;border-radius: 5px;cursor: pointer;
+}
+
+.delete{
+  background: #e73a3a;padding: 15px;border-radius: 5px;
+  color: white;cursor: pointer;
+}
+
+.basket__box{
+  display: none;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 350px;
+  background: white;
+  border-radius: 25px;
+}
+
+.basket__title{
+  padding: 15px;
+  border-bottom: solid 1px black;
+}
+
+.basket__sum{
+  margin-top: 40px;
+  border-top: solid 1px black;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.basket__icon{
+  cursor: pointer;
+}
+
+.close::after {
+  cursor: pointer;
+  content: 'x';
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  float: right;
+}
+
+.goods{
+  padding: 10px;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+.sum__item{
+  width: 50%;
+}
+
+.payment__button{
+  border: none;
+  border-left: solid 1px black;
+  width: 50%;background: #02E69B;
+  padding: 10px;
+  border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .basket__box{
+    width: 80%;
+  }
+}
